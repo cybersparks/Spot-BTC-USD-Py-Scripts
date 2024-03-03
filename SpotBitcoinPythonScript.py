@@ -1,6 +1,5 @@
 #This script gets the current SPOT BTC in USD from Coinbase. 
 #Documentaiton https://docs.cloud.coinbase.com/sign-in-with-coinbase/docs/api-prices
-#YT https://www.youtube.com/watch?v=A9M4BOyoH_w
 
 import requests #Can handle HTTP requests / Can query data from websites
 import json #JSON file parser library

@@ -1,4 +1,5 @@
 Project Goal 
+
 Create a script that pulls the spot bitcoin price for everyday of the past week from the Coinbase API.
 
 Coinbase Documentaiton:

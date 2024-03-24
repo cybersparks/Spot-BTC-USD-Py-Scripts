@@ -14,3 +14,7 @@ response = requests.get(url)
 spot_price = json.loads(response.text)
 #show spot btc price
 print(spot_price)
+
+**lEAVING THIS HERE, INSTRUCTIONS ON HOW THE CSV MODULE, AND WRITE USING A DICTIONARY TO A CSV
+Source Below
+https://www.geeksforgeeks.org/working-csv-files-python/

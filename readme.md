@@ -11,9 +11,9 @@ Coinbase Documentaiton:
 - TO SET ENVRIONMENT PATH
 - FOR WINDOWS - Search About your PC Advanced System Settings on the right Environment Variable under Advanced
 
-# TO DO LIST
-    Done - LOOK UP HOW TO SET ENVIRONMENT PATH FOR PYTHON ON PC AND OR FIND ONLINE RESOURCE TO WRITE PYTHON CODE. 
-    Pending - Insert .csv module
+# To Do List
+- Done - LOOK UP HOW TO SET ENVIRONMENT PATH FOR PYTHON ON PC AND OR FIND ONLINE RESOURCE TO WRITE PYTHON CODE. 
+- Pending - Insert .csv module
 
 # YouTube Walkthrough for Spot BTC Price using Python
  https://www.youtube.com/watch?v=A9M4BOyoH_w 

@@ -5,8 +5,12 @@ from itertools import count
 import requests #Can handle HTTP requests / Can query data from websites
 import json #JSON file parser library
 
+#Ask user to input historical date for BTC Price
+historical_date = input("Enter a date in the past in Year-MM-DD format to get the Spot BTC price for that date.")
+
 #variable storing coinbase API URL in python Format
-url = 'https://api.coinbase.com/v2/prices/BTC-USD/spot'
+#Modified variable to get historical price
+url = 'https://api.coinbase.com/v2/prices/BTC-USD/spot?date={}'.format(historical_date)
 
 #requests.get function, send the http request using url variable
 response = requests.get(url)

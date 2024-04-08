@@ -1,8 +1,8 @@
 ## Project
 
 This Repo currently has two working scripts. 
-- 1. SpotBitcoinPythonScript.py gets the current spot price of BTC-USD and creates a .csv file on your PC. Pulls the spot bitcoin price from the Coinbase API.
-- 2. BTCHistoricalPrice.py is a script that allows you to enter a historical date, and get the going spot BTC-USD price for that date.
+- 1 SpotBitcoinPythonScript.py gets the current spot price of BTC-USD and creates a .csv file on your PC. Pulls the spot bitcoin price from the Coinbase API.
+- 2 BTCHistoricalPrice.py is a script that allows you to enter a historical date, and get the going spot BTC-USD price for that date.
 
 Coinbase Documentaiton:
 [Data API Prices:](https://docs.cloud.coinbase.com/sign-in-with-coinbase/docs/api-prices)

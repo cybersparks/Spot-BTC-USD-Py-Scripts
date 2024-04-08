@@ -1,6 +1,7 @@
-#This script gets the current SPOT BTC in USD from Coinbase. 
+#This script gets the current SPOT BTC in USD from Coinbase and creates a CSV called "Spot_BTC_Price.csv" on your computer. 
 #Documentaiton https://docs.cloud.coinbase.com/sign-in-with-coinbase/docs/api-prices
 
+from itertools import count
 import requests #Can handle HTTP requests / Can query data from websites
 import json #JSON file parser library
 import csv # importing the csv module
@@ -14,21 +15,19 @@ response = requests.get(url)
 #Process with the JSON loads function
 spot_price = json.loads(response.text)
 #show spot btc price
-print(spot_price) ###CODE WORKS UP TO THIS POINT, 3/23/24
+print(spot_price) 
 
-##**lEAVING THIS HERE, INSTRUCTIONS ON HOW THE CSV MODULE, AND WRITE USING A DICTIONARY TO A CSV
-#Source Below
+#INSTRUCTIONS ON HOW THE CSV MODULE, AND WRITE USING A DICTIONARY TO A CSV
 #https://www.geeksforgeeks.org/working-csv-files-python/
 
-
 # my data rows as dictionary objects
-mydict = spot_price ###THIS VARIABLE NEEDS TO BE FIXED AS A PROPER DICTIONARY. THIS CODE CREATES A CSV. :)
+mydict = [spot_price]
 
 # field names
-fields = ['amount', 'base', 'year', 'currency']
+fields = ['data', 'amount', 'base', 'currency'] #Had to use DATA as that is how the Coinbase API returns the dictionary.
 
 # name of csv file
-filename = "current_spot_price_btc.csv"
+filename = "Spot_BTC_Price.csv"
 
 # writing to csv file
 with open(filename, 'w') as csvfile:
@@ -40,3 +39,6 @@ with open(filename, 'w') as csvfile:
 
 	# writing data rows
 	writer.writerows(mydict)
+
+#To find the CSV created Search: c drive C:\Users\yourusername, for "Spot_BTC_Price.csv"
+
